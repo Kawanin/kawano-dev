@@ -1,0 +1,111 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title_1": "Data Analyst. Or, deep down,",
+        "title_2": "someone who likes understanding the why",
+        "subtitle": "I'm Luciano Kawano, a Data Analyst specialized in Business Intelligence (Power BI), automation with n8n and Python — currently expanding into data engineering (AWS, Snowflake, Databricks). Every project here starts from a real business problem, not a pretty dashboard.",
+        "cta_projects": "View projects",
+        "cta_cv": "Download CV"
+    },
+    "home": {
+        "featured": "Featured projects",
+        "see_all": "see all",
+        "methodology": "Methodology",
+        "how_i_work": "How I work",
+        "stack": "Stack",
+        "mastered": "Mastered",
+        "learning": "Learning now",
+        "pipeline": [
+            {
+                "num": "01",
+                "title": "Collect",
+                "desc": "Raw sources: internal systems, APIs, spreadsheets."
+            },
+            {
+                "num": "02",
+                "title": "Model",
+                "desc": "Structure the data into layers, relationships and the right granularity."
+            },
+            {
+                "num": "03",
+                "title": "Analyze",
+                "desc": "Cross variables until finding the why, not just the what."
+            },
+            {
+                "num": "04",
+                "title": "Visualize",
+                "desc": "Dashboards that answer business questions directly."
+            },
+            {
+                "num": "05",
+                "title": "Automate",
+                "desc": "Removes repetitive manual work from the process."
+            }
+        ],
+        "skills_mastered": [
+            {
+                "name": "Power BI / DAX / Fabric",
+                "level": 4
+            },
+            {
+                "name": "n8n / ETL",
+                "level": 3
+            },
+            {
+                "name": "Python / SQL Server / PostgreSQL",
+                "level": 3
+            }
+        ],
+        "skills_learning": [
+            {
+                "name": "AWS",
+                "level": 1
+            },
+            {
+                "name": "Snowflake",
+                "level": 1
+            },
+            {
+                "name": "Tableau / Looker",
+                "level": 2
+            }
+        ]
+    },
+    "about": {
+        "eyebrow": "About me",
+        "title": "From day-to-day operations to data as a decision-making tool",
+        "local_label": "Location",
+        "local_value": "Paraná, Brazil",
+        "role_label": "Current role",
+        "role_value": "Mid-level Data Analyst",
+        "lang_label": "Languages",
+        "lang_value": "PT · EN fluent · JP basic",
+        "education_title": "Education",
+        "courses_title": "Currently in progress",
+        "trajectory_title": "Career path",
+        "certifications_title": "Certifications",
+        "outside_title": "Outside of work",
+        "cert_view": "View certificate",
+        "cert_pending": "In progress",
+        "hobby_music_label": "Music",
+        "hobby_music_text": "Always got some soundtrack running",
+        "hobby_games_label": "Games",
+        "hobby_games_text": "PS5, preferably",
+        "hobby_design_label": "Design",
+        "hobby_design_text": "Visual storytelling and brand identity",
+        "hobby_photo_label": "By my side",
+        "hobby_photo_text": "Ana and Athena"
+    },
+    "projects_page": {
+        "eyebrow": "Portfolio",
+        "title": "Projects",
+        "subtitle": "Eight projects in Business Intelligence, automation and data engineering — from Power BI to AWS.",
+        "filter_all": "All"
+    },
+    "footer": "built from scratch in Vue.js"
+}
