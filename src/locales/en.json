@@ -95,9 +95,9 @@
         "hobby_music_label": "Music",
         "hobby_music_text": "Always got some soundtrack running",
         "hobby_games_label": "Games",
-        "hobby_games_text": "PS5, preferably",
-        "hobby_design_label": "Design",
-        "hobby_design_text": "Visual storytelling and brand identity",
+        "hobby_games_text": "Playing to relax and have fun",
+        "hobby_cooking_label": "Cooking",
+        "hobby_cooking_text": "I enjoy cooking in my free time",
         "hobby_photo_label": "By my side",
         "hobby_photo_text": "Ana and Athena"
     },
@@ -106,6 +106,10 @@
         "title": "Projects",
         "subtitle": "Eight projects in Business Intelligence, automation and data engineering — from Power BI to AWS.",
         "filter_all": "All"
+    },
+    "project_detail": {
+        "download": "Download project",
+        "gif_placeholder": "GIF coming soon"
     },
     "footer": "built from scratch in Vue.js"
 }

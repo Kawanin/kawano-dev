@@ -3,9 +3,24 @@ import { useI18n } from 'vue-i18n'
 import { onMounted, onUnmounted, ref } from 'vue'
 import BaseButton from '../ui/BaseButton.vue'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const canvasRef = ref(null)
 let animationId = null
+
+function openAndDownloadCV() {
+  const path = locale.value === 'en'
+    ? '/documents/cv-luciano-kawano-en.pdf'
+    : '/documents/cv-luciano-kawano-pt.pdf'
+
+  window.open(path, '_blank')
+
+  const link = document.createElement('a')
+  link.href = path
+  link.download = locale.value === 'en' ? 'Luciano-Kawano-CV-EN.pdf' : 'Luciano-Kawano-CV-PT.pdf'
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+}
 
 onMounted(() => {
   const canvas = canvasRef.value
@@ -82,6 +97,7 @@ onMounted(() => {
   })
 })
 </script>
+
 <template>
   <div class="hero-outer">
     <div class="hero-text">
@@ -89,7 +105,7 @@ onMounted(() => {
       <p>{{ t('hero.subtitle') }}</p>
       <div class="cta-row">
         <router-link to="/projetos"><BaseButton variant="primary">{{ t('hero.cta_projects') }}</BaseButton></router-link>
-        <BaseButton variant="secondary">{{ t('hero.cta_cv') }}</BaseButton>
+        <BaseButton variant="secondary" @click="openAndDownloadCV">{{ t('hero.cta_cv') }}</BaseButton>
       </div>
     </div>
     <div class="hero-visual">
@@ -130,9 +146,25 @@ onMounted(() => {
 .hero-visual canvas { width: 100%; height: 100%; display: block; }
 
 @media (max-width: 900px) {
-  .hero-outer { flex-direction: column; min-height: auto; }
-  .hero-text { padding: 48px 24px 32px; max-width: 100%; }
+  .hero-outer {
+    flex-direction: column;
+    min-height: auto;
+    position: relative;
+  }
+  .hero-text {
+    padding: 48px 24px 40px;
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+  }
   .hero-text h1 { font-size: 38px; }
-  .hero-visual { min-height: 260px; }
+  .hero-visual {
+    position: absolute;
+    inset: 0;
+    min-height: auto;
+    opacity: 0.22;
+    z-index: 0;
+    pointer-events: none;
+  }
 }
 </style>

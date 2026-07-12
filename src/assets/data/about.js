@@ -1,14 +1,14 @@
 export const aboutContent = {
     intro: {
         pt: [
-            'Sou <strong>Luciano Kawano</strong>, Analista de Dados Pleno na Senff, onde arquiteto painéis de Business Intelligence (Power BI) para áreas como Seguros, Tesouraria, Contabilidade e KYC, além de liderar a conciliação sistêmica do FIDC entre TOTVS e Sinqia.',
-            'No caminho, percebi que boa parte do trabalho manual que eu tentava visualizar podia simplesmente deixar de existir — foi aí que entrou automação de ETL com n8n e Python, hoje poupando mais de 10 horas semanais da operação.',
-            'Atualmente estou expandindo essa base para engenharia de dados (AWS, Snowflake, Databricks) e ampliando meu repertório de visualização com Tableau, Looker e UX/UI.'
+            'Sou <strong>Luciano Kawano</strong>, Analista de Dados Pleno na Senff. Trabalho principalmente com Power BI, construindo painéis para áreas como Seguros, Tesouraria, Contabilidade e KYC, e também lidero a conciliação do FIDC entre TOTVS e Sinqia.',
+            'Com o tempo, comecei a perceber que muita coisa que eu fazia manualmente pra depois colocar num dashboard nem precisava passar pela minha mão. Foi assim que comecei a automatizar processos de ETL com n8n e Python, e hoje isso economiza mais de 10 horas de trabalho operacional por semana.',
+            'Atualmente estou me aprofundando em engenharia de dados (AWS, Snowflake, Databricks) e também estudando Tableau, Looker e UX/UI, pra melhorar não só como eu trato os dados, mas como eu apresento eles.'
         ],
         en: [
-            'I\'m <strong>Luciano Kawano</strong>, a mid-level Data Analyst at Senff, where I build Business Intelligence dashboards (Power BI) for areas like Insurance, Treasury, Accounting and KYC, and lead the systemic reconciliation of FIDC between TOTVS and Sinqia.',
-            'Along the way, I realized a lot of the manual work I was trying to visualize could simply stop existing — that\'s where ETL automation with n8n and Python came in, now saving more than 10 hours of operational work per week.',
-            'I\'m currently expanding that foundation into data engineering (AWS, Snowflake, Databricks) and broadening my visualization toolkit with Tableau, Looker and UX/UI.'
+            'I\'m <strong>Luciano Kawano</strong>, a mid-level Data Analyst at Senff. Most of my day-to-day is in Power BI, building dashboards for teams like Insurance, Treasury, Accounting and KYC, and I also lead the FIDC reconciliation between TOTVS and Sinqia.',
+            'Over time I noticed a lot of the manual work I did before building a dashboard didn\'t really need a person doing it. That\'s how I ended up automating ETL processes with n8n and Python, and today it saves more than 10 hours of operational work a week.',
+            'Right now I\'m digging deeper into data engineering (AWS, Snowflake, Databricks) and also studying Tableau, Looker and UX/UI, to get better not just at handling data, but at presenting it.'
         ]
     },
     education: [

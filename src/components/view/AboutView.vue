@@ -4,6 +4,7 @@ import CertificateCard from '../ui/CertificateCard.vue'
 import { certificates } from '../../assets/data/certificates.js'
 import { aboutContent } from '../../assets/data/about.js'
 import AboutVisual from '../sections/AboutVisual.vue'
+import HobbyIcon from '../ui/HobbyIcon.vue'
 
 const { t, locale } = useI18n()
 const courses = ['AWS', 'Snowflake', 'Databricks', 'Tableau', 'Looker']
@@ -75,12 +76,25 @@ const courses = ['AWS', 'Snowflake', 'Databricks', 'Tableau', 'Looker']
 
       <h3 class="subhead" v-reveal>{{ t('about.outside_title') }}</h3>
       <div class="hobby-grid" v-reveal>
-        <div class="hobby-item"><span class="hb-label">{{ t('about.hobby_music_label') }}</span>{{ t('about.hobby_music_text') }}</div>
-        <div class="hobby-item"><span class="hb-label">{{ t('about.hobby_games_label') }}</span>{{ t('about.hobby_games_text') }}</div>
-        <div class="hobby-item"><span class="hb-label">{{ t('about.hobby_design_label') }}</span>{{ t('about.hobby_design_text') }}</div>
-        <div class="hobby-item hobby-photo-item">
+        <div class="hobby-item">
+          <HobbyIcon icon="spotify" />
+          <span class="hb-label">{{ t('about.hobby_music_label') }}</span>
+          {{ t('about.hobby_music_text') }}
+        </div>
+        <div class="hobby-item">
+          <HobbyIcon icon="playstation" />
+          <span class="hb-label">{{ t('about.hobby_games_label') }}</span>
+          {{ t('about.hobby_games_text') }}
+        </div>
+        <div class="hobby-item">
+          <HobbyIcon icon="cooking" />
+          <span class="hb-label">{{ t('about.hobby_cooking_label') }}</span>
+          {{ t('about.hobby_cooking_text') }}
+        </div>
+        <div class="hobby-item">
           <img src="/images/hobby-personal.jpg" alt="" class="hobby-photo" />
-          <div><span class="hb-label">{{ t('about.hobby_photo_label') }}</span>{{ t('about.hobby_photo_text') }}</div>
+          <span class="hb-label">{{ t('about.hobby_photo_label') }}</span>
+          {{ t('about.hobby_photo_text') }}
         </div>
       </div>
     </div>
@@ -173,7 +187,7 @@ const courses = ['AWS', 'Snowflake', 'Databricks', 'Tableau', 'Looker']
 .hobby-item { background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 18px; text-align: center; font-size: var(--text-small); color: var(--text-secondary); }
 .hb-label { display: block; font-family: var(--font-mono); font-size: 11px; color: var(--blue-300); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.06em; }
 .hobby-photo-item { display: flex; flex-direction: column; align-items: center; gap: 10px; }
-.hobby-photo { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border-subtle); }
+.hobby-photo { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 1px solid var(--border-subtle); margin: 0 auto 12px; display: block; }
 
 @media (max-width: 640px) { .hero, .section { padding-left: 24px; padding-right: 24px; } }
 </style>

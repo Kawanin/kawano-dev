@@ -31,7 +31,9 @@ export const projects = [
             pt: 'Identificação de contratos problemáticos antes da 3ª renegociação.',
             en: 'Problem contracts flagged before the 3rd renegotiation.'
         },
-        stack: ['DAX', 'Power Query', 'SQL']
+        stack: ['DAX', 'Power Query', 'SQL'],
+        downloadUrl: '',
+        gifUrl: ''
     },
     {
         slug: 'frete-ticket-medio',
@@ -65,7 +67,9 @@ export const projects = [
             pt: 'Simulações de política de frete grátis por faixa de valor.',
             en: 'Free-shipping threshold policy simulations enabled.'
         },
-        stack: ['DAX', 'Power Query', 'Olist Dataset']
+        stack: ['DAX', 'Power Query', 'Olist Dataset'],
+        downloadUrl: '',
+        gifUrl: ''
     },
     {
         slug: 'conciliacao-automatica',
@@ -99,7 +103,9 @@ export const projects = [
             pt: 'Tempo de conciliação reduzido de 1h para uma checagem de 5 minutos.',
             en: 'Reconciliation time cut from 1h to a 5-minute check.'
         },
-        stack: ['n8n', 'Google Sheets', 'Automação']
+        stack: ['n8n', 'Google Sheets', 'Automação'],
+        downloadUrl: '',
+        gifUrl: ''
     },
     {
         slug: 'lembretes-pos-consulta',
@@ -133,7 +139,9 @@ export const projects = [
             pt: 'Processo manual e esquecido virou funil automático de retenção.',
             en: 'A forgotten manual process became an automatic retention funnel.'
         },
-        stack: ['n8n', 'Google Calendar', 'Twilio']
+        stack: ['n8n', 'Google Calendar', 'Twilio'],
+        downloadUrl: '',
+        gifUrl: ''
     },
     {
         slug: 'ocupacao-hospitalar',
@@ -167,7 +175,9 @@ export const projects = [
             pt: 'Gestão reforça escala preventivamente ao invés de reagir à crise.',
             en: 'Management reinforces staffing preventively instead of reacting to a crisis.'
         },
-        stack: ['Tableau', 'Dataset público']
+        stack: ['Tableau', 'Dataset público'],
+        downloadUrl: '',
+        gifUrl: ''
     },
     {
         slug: 'orcamento-tempo-real',
@@ -201,7 +211,9 @@ export const projects = [
             pt: 'Acompanhamento de orçamento em tempo real, não mais mensal.',
             en: 'Real-time budget tracking, no longer monthly.'
         },
-        stack: ['LookML', 'Looker']
+        stack: ['LookML', 'Looker'],
+        downloadUrl: '',
+        gifUrl: ''
     },
     {
         slug: 'datawarehouse-multicanal',
@@ -235,7 +247,9 @@ export const projects = [
             pt: 'Análises que levavam dias passaram a rodar sob demanda.',
             en: 'Analyses that took days now run on demand.'
         },
-        stack: ['SQL', 'Data Warehouse', 'Olist Dataset']
+        stack: ['SQL', 'Data Warehouse', 'Olist Dataset'],
+        downloadUrl: '',
+        gifUrl: ''
     },
     {
         slug: 'deteccao-fraude',
@@ -269,6 +283,8 @@ export const projects = [
             pt: 'Janela de detecção reduzida de 24h para minutos.',
             en: 'Detection window cut from 24h to minutes.'
         },
-        stack: ['S3', 'Lambda', 'Arquitetura']
+        stack: ['S3', 'Lambda', 'Arquitetura'],
+        downloadUrl: '',
+        gifUrl: ''
     }
 ]

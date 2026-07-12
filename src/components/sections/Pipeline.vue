@@ -22,11 +22,11 @@ const stages = tm('home.pipeline')
 </template>
 
 <style scoped>
-.pipeline-section { background: var(--bg-secondary); }
+.pipeline-section { background: var(--bg-secondary); overflow: visible; }
 .kicker { font-family: var(--font-mono); font-size: var(--text-mono); color: var(--blue-300); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 12px; }
 .section-head { margin-bottom: 32px; }
 .section-head h2 { font-size: var(--text-h2); }
-.pipeline { display: flex; align-items: stretch; overflow-x: auto; padding-bottom: 8px; }
+.pipeline { display: flex; align-items: stretch; flex-wrap: wrap; gap: 0; padding: 14px 4px 24px; }
 .pipe-stage {
   flex: 1; min-width: 170px; background: var(--bg-elevated); border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md); padding: 26px 20px;
@@ -39,7 +39,7 @@ const stages = tm('home.pipeline')
 .pipe-connector { display: flex; align-items: center; justify-content: center; width: 36px; flex-shrink: 0; }
 .pipe-connector::before { content: ''; width: 100%; height: 1px; background: linear-gradient(90deg, var(--blue-500), var(--blue-300)); }
 @media (max-width: 900px) {
-  .pipeline { flex-direction: column; }
+  .pipeline { flex-direction: column; flex-wrap: nowrap; }
   .pipe-connector { width: 100%; height: 24px; }
   .pipe-connector::before { width: 1px; height: 100%; background: linear-gradient(180deg, var(--blue-500), var(--blue-300)); margin: 0 auto; }
 }
