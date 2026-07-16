@@ -128,7 +128,13 @@ onMounted(() => {
   flex-direction: column;
   justify-content: center;
 }
-.hero-text h1 { font-size: var(--text-hero); font-weight: 600; line-height: 1.12; margin-bottom: 20px; }
+.hero-text h1 {
+  font-size: var(--text-hero);
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  max-width: 460px;
+}
 .hero-text h1 .grad {
   background: linear-gradient(90deg, var(--blue-300), var(--blue-500));
   -webkit-background-clip: text; background-clip: text; color: transparent;
@@ -140,9 +146,9 @@ onMounted(() => {
   flex: 1;
   position: relative;
   min-height: 480px;
-  background: radial-gradient(circle at 65% 45%, rgba(46,111,217,0.16), transparent 70%);
   overflow: hidden;
 }
+
 .hero-visual canvas { width: 100%; height: 100%; display: block; }
 
 @media (max-width: 900px) {

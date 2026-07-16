@@ -6,9 +6,9 @@
         "contact": "Contact"
     },
     "hero": {
-        "title_1": "Data Analyst. Or, deep down,",
-        "title_2": "someone who likes understanding the why",
-        "subtitle": "I'm Luciano Kawano, a Data Analyst specialized in Business Intelligence (Power BI), automation with n8n and Python — currently expanding into data engineering (AWS, Snowflake, Databricks). Every project here starts from a real business problem, not a pretty dashboard.",
+        "title_1": "Before the dashboard, there's",
+        "title_2": "always a question",
+        "subtitle": "I'm Kawano. I work with Power BI and automation day to day, and I'm slowly picking up AWS, Snowflake and Databricks. I'd rather spend more time understanding the problem than making a pretty chart.",
         "cta_projects": "View projects",
         "cta_cv": "Download CV"
     },
@@ -99,17 +99,20 @@
         "hobby_cooking_label": "Cooking",
         "hobby_cooking_text": "I enjoy cooking in my free time",
         "hobby_photo_label": "By my side",
-        "hobby_photo_text": "Ana and Athena"
+        "hobby_photo_text": "Ana and Athena",
+        "cert_not_started": "not started",
+        "cert_completed_of": "{done}/{total} completed",
+        "cert_percent_complete": "{percent}% complete"
     },
     "projects_page": {
         "eyebrow": "Portfolio",
         "title": "Projects",
-        "subtitle": "Eight projects in Business Intelligence, automation and data engineering — from Power BI to AWS.",
+        "subtitle": "Here are a few real problems I've solved (or I'm solving) with Power BI, n8n and other tools I use daily. Each card below is a full case, not just a nice screenshot.",
         "filter_all": "All"
     },
     "project_detail": {
         "download": "Download project",
         "gif_placeholder": "GIF coming soon"
     },
-    "footer": "built from scratch in Vue.js"
+    "footer": "Hand-built site, no template — just me, Vue and curiosity."
 }

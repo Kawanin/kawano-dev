@@ -1,7 +1,8 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
+import { certificationPaths, standaloneCertificates } from '../../assets/data/certificates.js'
+import CertificationPathCard from '../ui/CertificationPathCard.vue'
 import CertificateCard from '../ui/CertificateCard.vue'
-import { certificates } from '../../assets/data/certificates.js'
 import { aboutContent } from '../../assets/data/about.js'
 import AboutVisual from '../sections/AboutVisual.vue'
 import HobbyIcon from '../ui/HobbyIcon.vue'
@@ -69,7 +70,8 @@ const courses = ['AWS', 'Snowflake', 'Databricks', 'Tableau', 'Looker']
         <div>
           <h3 class="subhead" v-reveal>{{ t('about.certifications_title') }}</h3>
           <div class="cert-list" v-reveal>
-            <CertificateCard v-for="c in certificates" :key="c.title" :cert="c" />
+            <CertificationPathCard v-for="p in certificationPaths" :key="p.id" :path="p" />
+            <CertificateCard v-for="c in standaloneCertificates" :key="c.title" :cert="c" />
           </div>
         </div>
       </div>
@@ -134,14 +136,22 @@ const courses = ['AWS', 'Snowflake', 'Databricks', 'Tableau', 'Looker']
 .about-hero-content h1 { font-size: 38px; margin-bottom: 36px; max-width: 640px; }
 
 @media (max-width: 900px) {
-  .about-hero { flex-direction: column; min-height: auto; }
-  .about-visual-panel { min-height: 220px; }
-  .about-hero-content { padding: 40px 24px; }
+  .about-hero { flex-direction: column; min-height: auto; position: relative; }
+  .about-visual-panel {
+    position: absolute;
+    inset: 0;
+    min-height: auto;
+    z-index: 0;
+  }
+  .about-hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 40px 24px;
+  }
 }
 
 .about-top { display: grid; grid-template-columns: 240px 1fr; gap: 56px; align-items: start; margin-bottom: 8px; }
 @media (max-width: 720px) { .about-top { grid-template-columns: 1fr; } }
-.photo-col { position: sticky; top: 100px; }
 .photo-frame {
   width: 240px; height: 240px; border-radius: var(--radius-lg); overflow: hidden;
   background: linear-gradient(160deg, var(--blue-900), var(--bg-secondary));

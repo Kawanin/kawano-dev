@@ -1,49 +1,33 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
-
-const bars = ref(Array.from({ length: 9 }, () => Math.random() * 65 + 25))
-let interval = null
-
-onMounted(() => {
-  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (prefersReduced) return
-  interval = setInterval(() => {
-    bars.value = bars.value.map(() => Math.random() * 65 + 25)
-  }, 2200)
-})
-onUnmounted(() => clearInterval(interval))
 </script>
 
 <template>
   <div class="about-visual">
-    <div class="bars">
-      <div class="bar" v-for="(h, i) in bars" :key="i" :style="{ height: h + '%' }"></div>
-    </div>
+    <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
+      <circle cx="120" cy="150" r="70" fill="none" stroke="#1C4587" stroke-width="1" opacity="0.7"/>
+      <circle cx="230" cy="280" r="110" fill="none" stroke="#2E6FD9" stroke-width="1" opacity="0.6"/>
+      <circle cx="90" cy="360" r="40" fill="none" stroke="#4BB4E6" stroke-width="1.2" opacity="0.8"/>
+      <line x1="120" y1="150" x2="230" y2="280" stroke="#2E6FD9" stroke-width="0.6" opacity="0.4"/>
+      <line x1="90" y1="360" x2="230" y2="280" stroke="#4BB4E6" stroke-width="0.6" opacity="0.4"/>
+      <circle cx="120" cy="150" r="2.5" fill="#4BB4E6"/>
+      <circle cx="230" cy="280" r="2.5" fill="#4BB4E6"/>
+      <circle cx="90" cy="360" r="2.5" fill="#4BB4E6"/>
+    </svg>
   </div>
 </template>
 
 <style scoped>
 .about-visual {
-  position: relative;
   height: 100%;
   min-height: 420px;
   display: flex;
-  align-items: flex-end;
-  overflow: hidden;
-}
-.bars {
-  display: flex;
-  align-items: flex-end;
-  gap: 14px;
-  padding: 40px;
-  width: 100%;
-  height: 100%;
+  align-items: center;
   justify-content: center;
+  background: radial-gradient(circle at 40% 50%, rgba(46,111,217,0.10), transparent 65%);
 }
-.bar {
-  width: 22px;
-  border-radius: 6px 6px 0 0;
-  background: linear-gradient(180deg, var(--blue-300), var(--blue-900));
-  transition: height 1.8s cubic-bezier(0.4, 0, 0.2, 1);
+.about-visual svg { width: 100%; height: 100%; }
+
+@media (max-width: 900px) {
+  .about-visual { min-height: auto; opacity: 0.18; pointer-events: none; }
 }
 </style>

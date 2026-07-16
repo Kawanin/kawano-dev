@@ -1,7 +1,8 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
+import { computed } from 'vue'
 const { t, tm } = useI18n()
-const stages = tm('home.pipeline')
+const stages = computed(() => tm('home.pipeline'))
 </script>
 
 <template>

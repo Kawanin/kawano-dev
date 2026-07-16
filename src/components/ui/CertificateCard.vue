@@ -1,6 +1,7 @@
 <script setup>
 import IssuerLogo from './IssuerLogo.vue'
-
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 defineProps({ cert: { type: Object, required: true } })
 </script>
 
@@ -14,8 +15,8 @@ defineProps({ cert: { type: Object, required: true } })
     <div class="cert-body">
       <strong>{{ cert.title }}</strong>
       <span class="cert-meta">{{ cert.issuer }} · {{ cert.date }}</span>
-      <a v-if="cert.pdf" :href="cert.pdf" target="_blank" class="cert-link">Ver certificado</a>
-      <span v-else class="cert-link muted">Em andamento</span>
+      <a v-if="cert.pdf" :href="cert.pdf" target="_blank" class="cert-link">{{ t('about.cert_view') }}</a>
+      <span v-else class="cert-link muted">{{ t('about.cert_pending') }}</span>
     </div>
   </div>
 </template>
