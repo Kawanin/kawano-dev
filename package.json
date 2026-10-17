@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "ship": "vite build && git add -A && git commit -m \"Redesign: portfolio Data Analyst com tema azul\" -m \"Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>\" -m \"Claude-Session: https://claude.ai/code/session_01Y9yxHcZiwVZ1cQBHDx2AS1\" && git log --oneline -3 && git status --short"
   },
   "dependencies": {
     "flag-icons": "^7.5.0",

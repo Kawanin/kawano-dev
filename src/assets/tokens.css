@@ -3,6 +3,7 @@
     --bg-primary: #0B1220;
     --bg-secondary: #111A2E;
     --bg-elevated: #1A2540;
+    --bg-deep: #080D18;
 
     /* Azuis */
     --blue-900: #0F2A52;
@@ -10,35 +11,50 @@
     --blue-500: #2E6FD9;
     --blue-300: #4BB4E6;
 
+    /* Papéis semânticos (acento = azul claro da marca) */
+    --accent: var(--blue-300);
+    --accent-deep: var(--blue-500);
+    --accent-ink: #07101E;
+    --accent-glow: rgba(75, 180, 230, 0.35);
+
     /* Texto */
     --text-primary: #F2F5FA;
     --text-secondary: #B9C6D6;
     --text-muted: #7C8CA6;
+    --text-faint: #5C6B85;
 
+    /* Linhas */
     --border-subtle: rgba(160, 179, 198, 0.16);
+    --border-edge: rgba(160, 179, 198, 0.30);
 
     /* Tipografia */
-    --font-heading: 'Space Grotesk', sans-serif;
-    --font-body: 'IBM Plex Sans', sans-serif;
-    --font-mono: 'IBM Plex Mono', monospace;
+    --font-heading: 'Space Grotesk', system-ui, sans-serif;
+    --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+    --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
 
-    /* Escala tipográfica (aumentada) */
-    --text-hero: 62px;
-    --text-h2: 32px;
+    /* Escala */
+    --text-hero: clamp(40px, 5.6vw, 66px);
+    --text-h2: clamp(28px, 3.4vw, 40px);
     --text-h3: 21px;
-    --text-body: 18px;
+    --text-body: 17px;
     --text-small: 15px;
-    --text-mono: 13px;
+    --text-mono: 12.5px;
 
-    /* Espaçamento (mais compacto) */
+    /* Espaçamento */
     --space-xs: 8px;
     --space-sm: 16px;
     --space-md: 24px;
     --space-lg: 32px;
     --space-xl: 48px;
     --space-2xl: 64px;
+    --space-section: clamp(72px, 10vw, 120px);
 
     --radius-sm: 8px;
     --radius-md: 12px;
     --radius-lg: 16px;
+
+    /* Movimento — curva de assinatura do site */
+    --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+    --nav-h: 64px;
+    --tabs-h: 46px;
 }

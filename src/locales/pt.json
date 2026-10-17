@@ -1,118 +1,176 @@
 {
-    "nav": {
-        "home": "Home",
-        "about": "Sobre",
-        "projects": "Projetos",
-        "contact": "Contato"
+  "nav": {
+    "about": "Sobre",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "certificates": "Certificados",
+    "stack": "Stack",
+    "languages": "Idiomas",
+    "contact": "Contato",
+    "hero": "Topo",
+    "sections": "Seções",
+    "menu": "Menu",
+    "skip": "Pular para o conteúdo",
+    "page": "Página"
+  },
+  "hero": {
+    "status": "Analista de Inteligência de Mercado · Toyama do Brasil",
+    "title_1": "Antes do dashboard, tem sempre",
+    "title_2": "uma pergunta.",
+    "subtitle": "Sou o Kawano, Data Analyst. Transformo dados comerciais e financeiros em decisão com Power BI, SQL e automação, e passo mais tempo entendendo o problema do que deixando um gráfico bonito.",
+    "cta_projects": "Ver experiência",
+    "cta_cv": "Baixar CV",
+    "hint": "passe o mouse nos cards",
+    "card_kpi": "Atingimento da meta",
+    "card_bars": "Vendas por trimestre",
+    "card_flow": "Pipeline n8n",
+    "card_model": "Modelo estrela"
+  },
+  "kpis": [
+    {
+      "v": 35,
+      "s": "",
+      "l": "linhas de produto com metas em cascata",
+      "b": "Toyama · Planejamento Anual de Metas"
     },
-    "hero": {
-        "title_1": "Antes do dashboard, tem sempre",
-        "title_2": "uma pergunta",
-        "subtitle": "Sou o Kawano. Trabalho com Power BI e automação no dia a dia, e estou aprendendo aos poucos AWS, Snowflake e Databricks. Prefiro passar mais tempo entendendo o problema do que deixando um gráfico bonito.",
-        "cta_projects": "Ver projetos",
-        "cta_cv": "Baixar CV"
+    {
+      "v": 10,
+      "s": "h+",
+      "l": "poupadas por semana com ETL",
+      "b": "Senff · n8n, Python e SQL"
     },
-    "home": {
-        "featured": "Projetos em destaque",
-        "see_all": "ver todos",
-        "methodology": "Metodologia",
-        "how_i_work": "Como eu trabalho",
-        "stack": "Stack",
-        "mastered": "Domino",
-        "learning": "Em aprendizado",
-        "pipeline": [
-            {
-                "num": "01",
-                "title": "Coleta",
-                "desc": "Fontes brutas: sistemas internos, APIs, planilhas."
-            },
-            {
-                "num": "02",
-                "title": "Modelagem",
-                "desc": "Estrutura os dados em camadas, relações e granularidade certa."
-            },
-            {
-                "num": "03",
-                "title": "Análise",
-                "desc": "Cruza variáveis até encontrar o porquê, não só o quê."
-            },
-            {
-                "num": "04",
-                "title": "Visualização",
-                "desc": "Dashboards que respondem perguntas de negócio direto."
-            },
-            {
-                "num": "05",
-                "title": "Automação",
-                "desc": "Remove o trabalho manual repetitivo do processo."
-            }
-        ],
-        "skills_mastered": [
-            {
-                "name": "Power BI / DAX / Fabric",
-                "level": 4
-            },
-            {
-                "name": "n8n / ETL",
-                "level": 3
-            },
-            {
-                "name": "Python / SQL Server / PostgreSQL",
-                "level": 3
-            }
-        ],
-        "skills_learning": [
-            {
-                "name": "AWS",
-                "level": 1
-            },
-            {
-                "name": "Snowflake",
-                "level": 1
-            },
-            {
-                "name": "Tableau / Looker",
-                "level": 2
-            }
-        ]
+    {
+      "v": 5,
+      "s": "",
+      "l": "setores com painéis em tempo real",
+      "b": "Senff · Seguros, Tesouraria, Contabilidade, KYC e POS"
     },
-    "about": {
-        "eyebrow": "Sobre mim",
-        "title": "Da rotina operacional aos dados como ferramenta de decisão",
-        "local_label": "Local",
-        "local_value": "Paraná, Brasil",
-        "role_label": "Cargo atual",
-        "role_value": "Analista de Dados Pleno",
-        "lang_label": "Idiomas",
-        "lang_value": "PT · EN fluente · JP básico",
-        "education_title": "Formação",
-        "courses_title": "Em andamento agora",
-        "trajectory_title": "Trajetória",
-        "certifications_title": "Certificações",
-        "outside_title": "Fora do trabalho",
-        "cert_view": "Ver certificado",
-        "cert_pending": "Em andamento",
-        "hobby_music_label": "Música",
-        "hobby_music_text": "Sempre com alguma trilha sonora rodando",
-        "hobby_games_label": "Games",
-        "hobby_games_text": "Jogar para relaxar e se divertir",
-        "hobby_cooking_label": "Cozinha",
-        "hobby_cooking_text": "Gosto de cozinhar nas horas vagas",
-        "hobby_photo_label": "Ao meu lado",
-        "hobby_photo_text": "Ana e Athena",
-        "cert_not_started": "não iniciado",
-        "cert_completed_of": "{done}/{total} concluídos",
-        "cert_percent_complete": "{percent}% concluído"
-    },
-    "projects_page": {
-        "eyebrow": "Portfolio",
-        "title": "Projetos",
-        "subtitle": "Separei alguns problemas reais que resolvi (ou estou resolvendo) com Power BI, n8n e outras ferramentas que uso no dia a dia. Cada card abaixo é um caso completo, não só um print bonito.",
-        "filter_all": "Todos"
-    },
-    "project_detail": {
-        "download": "Baixar projeto",
-        "gif_placeholder": "GIF em breve"
-    },
-    "footer": "Site feito à mão, sem template — só eu, Vue e curiosidade."
+    {
+      "v": 12,
+      "s": "",
+      "l": "blocos de inteligência de clientes",
+      "b": "Toyama · Análise de Mercado (Power BI)"
+    }
+  ],
+  "about": {
+    "label": "Sobre",
+    "title": "Da rotina operacional aos dados como ferramenta de decisão",
+    "method_title": "Como eu trabalho",
+    "method": [
+      {
+        "t": "Coleta",
+        "d": "Fontes brutas: sistemas internos, APIs, planilhas."
+      },
+      {
+        "t": "Modelagem",
+        "d": "Camadas, relações e a granularidade certa."
+      },
+      {
+        "t": "Análise",
+        "d": "Cruzar variáveis até achar o porquê, não só o quê."
+      },
+      {
+        "t": "Visualização",
+        "d": "Dashboards que respondem perguntas de negócio."
+      },
+      {
+        "t": "Automação",
+        "d": "Tirar o trabalho manual repetitivo do caminho."
+      }
+    ],
+    "education": "Formação",
+    "outside": "Fora do trabalho",
+    "hobby_music": "Música",
+    "hobby_music_text": "Sempre com uma trilha rodando",
+    "hobby_games": "Games",
+    "hobby_games_text": "Jogar para relaxar",
+    "hobby_cooking": "Cozinha",
+    "hobby_cooking_text": "Cozinhar nas horas vagas",
+    "hobby_photo": "Ao meu lado",
+    "hobby_photo_text": "Ana e Athena"
+  },
+  "experience": {
+    "label": "Experiência",
+    "title": "Cases: problema, solução, resultado",
+    "intro": "Escolha uma empresa e um case. Passe o mouse numa ferramenta para ver onde mais ela aparece.",
+    "problem": "Problema",
+    "solution": "Solução",
+    "result": "Resultado",
+    "open": "abrir",
+    "close": "fechar"
+  },
+  "projects": {
+    "label": "Projetos",
+    "title": "Estudos de caso",
+    "intro": "Problemas de negócio que resolvi (ou simulei) com Power BI, n8n e outras ferramentas. Filtre como em um slicer.",
+    "all": "Todos",
+    "context": "Contexto",
+    "discovery": "Descoberta",
+    "solution": "Solução",
+    "result": "Resultado",
+    "count": "{n} de {total}",
+    "open": "Abrir",
+    "close": "Fechar"
+  },
+  "certificates": {
+    "label": "Certificados",
+    "title": "Formação e certificações",
+    "done": "Concluído",
+    "progress": "Em andamento",
+    "view": "Ver certificado",
+    "verify": "Verificar"
+  },
+  "stack": {
+    "label": "Stack",
+    "title": "Ferramentas do dia a dia",
+    "intro": "Passe o mouse numa ferramenta: aparece onde usei, e os cases relacionados acendem.",
+    "groups": {
+      "bi": "BI",
+      "data": "Dados e automação",
+      "build": "Construção",
+      "learning": "Em aprendizado"
+    }
+  },
+  "languages": {
+    "label": "Idiomas",
+    "title": "Idiomas",
+    "items": [
+      {
+        "flag": "br",
+        "n": "Português",
+        "l": "Nativo",
+        "v": 100
+      },
+      {
+        "flag": "us",
+        "n": "Inglês",
+        "l": "Fluente",
+        "v": 85
+      },
+      {
+        "flag": "jp",
+        "n": "Japonês",
+        "l": "Básico",
+        "v": 30
+      },
+      {
+        "flag": "it",
+        "n": "Italiano",
+        "l": "Básico",
+        "v": 30
+      }
+    ]
+  },
+  "contact": {
+    "label": "Contato",
+    "title": "Vamos conversar?",
+    "text": "Aberto a conversar sobre dados, BI e automação. Escolha um canal na tabela.",
+    "run": "Executar",
+    "hint": "clique em uma linha para abrir",
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "channel": "Canal",
+    "value": "Contato"
+  },
+  "footer": "Site feito à mão, sem template: só eu, Vue e curiosidade."
 }

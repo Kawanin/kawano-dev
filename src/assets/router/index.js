@@ -1,22 +1,22 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../../components/view/HomeView.vue'
-import AboutView from '../../components/view/AboutView.vue'
-import ProjectsView from '../../components/view/ProjectsView.vue'
-import ProjectDetailView from '../../components/view/ProjectDetailView.vue'
 import DesignSystemView from '../../components/view/DesignSystemView.vue'
 
 const routes = [
     { path: '/', name: 'home', component: HomeView },
-    { path: '/sobre', name: 'about', component: AboutView },
-    { path: '/projetos', name: 'projects', component: ProjectsView },
-    { path: '/projetos/:slug', name: 'project-detail', component: ProjectDetailView, props: true },
     { path: '/design-system', name: 'design-system', component: DesignSystemView },
+    // rotas antigas (/sobre, /projetos, /projetos/:slug) agora são seções da página única
+    { path: '/sobre', redirect: { path: '/', hash: '#sobre' } },
+    { path: '/projetos/:slug?', redirect: { path: '/', hash: '#projetos' } },
+    { path: '/:pathMatch(.*)*', redirect: '/' }
 ]
 
 const router = createRouter({
     history: createWebHistory(),
     routes,
-    scrollBehavior() {
+    scrollBehavior(to, from, saved) {
+        if (saved) return saved
+        if (to.hash) return { el: to.hash, behavior: 'smooth' }
         return { top: 0 }
     }
 })

@@ -1,118 +1,176 @@
 {
-    "nav": {
-        "home": "Home",
-        "about": "About",
-        "projects": "Projects",
-        "contact": "Contact"
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "certificates": "Certificates",
+    "stack": "Stack",
+    "languages": "Languages",
+    "contact": "Contact",
+    "hero": "Top",
+    "sections": "Sections",
+    "menu": "Menu",
+    "skip": "Skip to content",
+    "page": "Page"
+  },
+  "hero": {
+    "status": "Market Intelligence Analyst · Toyama do Brasil",
+    "title_1": "Before the dashboard, there's always",
+    "title_2": "a question.",
+    "subtitle": "I'm Kawano, a Data Analyst. I turn commercial and financial data into decisions with Power BI, SQL and automation, and I'd rather spend time understanding the problem than polishing a pretty chart.",
+    "cta_projects": "See experience",
+    "cta_cv": "Download CV",
+    "hint": "hover the cards",
+    "card_kpi": "Target attainment",
+    "card_bars": "Sales by quarter",
+    "card_flow": "n8n pipeline",
+    "card_model": "Star schema"
+  },
+  "kpis": [
+    {
+      "v": 35,
+      "s": "",
+      "l": "product lines with cascading targets",
+      "b": "Toyama · Annual Goal Planning"
     },
-    "hero": {
-        "title_1": "Before the dashboard, there's",
-        "title_2": "always a question",
-        "subtitle": "I'm Kawano. I work with Power BI and automation day to day, and I'm slowly picking up AWS, Snowflake and Databricks. I'd rather spend more time understanding the problem than making a pretty chart.",
-        "cta_projects": "View projects",
-        "cta_cv": "Download CV"
+    {
+      "v": 10,
+      "s": "h+",
+      "l": "saved per week with ETL",
+      "b": "Senff · n8n, Python and SQL"
     },
-    "home": {
-        "featured": "Featured projects",
-        "see_all": "see all",
-        "methodology": "Methodology",
-        "how_i_work": "How I work",
-        "stack": "Stack",
-        "mastered": "Mastered",
-        "learning": "Learning now",
-        "pipeline": [
-            {
-                "num": "01",
-                "title": "Collect",
-                "desc": "Raw sources: internal systems, APIs, spreadsheets."
-            },
-            {
-                "num": "02",
-                "title": "Model",
-                "desc": "Structure the data into layers, relationships and the right granularity."
-            },
-            {
-                "num": "03",
-                "title": "Analyze",
-                "desc": "Cross variables until finding the why, not just the what."
-            },
-            {
-                "num": "04",
-                "title": "Visualize",
-                "desc": "Dashboards that answer business questions directly."
-            },
-            {
-                "num": "05",
-                "title": "Automate",
-                "desc": "Removes repetitive manual work from the process."
-            }
-        ],
-        "skills_mastered": [
-            {
-                "name": "Power BI / DAX / Fabric",
-                "level": 4
-            },
-            {
-                "name": "n8n / ETL",
-                "level": 3
-            },
-            {
-                "name": "Python / SQL Server / PostgreSQL",
-                "level": 3
-            }
-        ],
-        "skills_learning": [
-            {
-                "name": "AWS",
-                "level": 1
-            },
-            {
-                "name": "Snowflake",
-                "level": 1
-            },
-            {
-                "name": "Tableau / Looker",
-                "level": 2
-            }
-        ]
+    {
+      "v": 5,
+      "s": "",
+      "l": "departments with real-time dashboards",
+      "b": "Senff · Insurance, Treasury, Accounting, KYC and POS"
     },
-    "about": {
-        "eyebrow": "About me",
-        "title": "From day-to-day operations to data as a decision-making tool",
-        "local_label": "Location",
-        "local_value": "Paraná, Brazil",
-        "role_label": "Current role",
-        "role_value": "Mid-level Data Analyst",
-        "lang_label": "Languages",
-        "lang_value": "PT · EN fluent · JP basic",
-        "education_title": "Education",
-        "courses_title": "Currently in progress",
-        "trajectory_title": "Career path",
-        "certifications_title": "Certifications",
-        "outside_title": "Outside of work",
-        "cert_view": "View certificate",
-        "cert_pending": "In progress",
-        "hobby_music_label": "Music",
-        "hobby_music_text": "Always got some soundtrack running",
-        "hobby_games_label": "Games",
-        "hobby_games_text": "Playing to relax and have fun",
-        "hobby_cooking_label": "Cooking",
-        "hobby_cooking_text": "I enjoy cooking in my free time",
-        "hobby_photo_label": "By my side",
-        "hobby_photo_text": "Ana and Athena",
-        "cert_not_started": "not started",
-        "cert_completed_of": "{done}/{total} completed",
-        "cert_percent_complete": "{percent}% complete"
-    },
-    "projects_page": {
-        "eyebrow": "Portfolio",
-        "title": "Projects",
-        "subtitle": "Here are a few real problems I've solved (or I'm solving) with Power BI, n8n and other tools I use daily. Each card below is a full case, not just a nice screenshot.",
-        "filter_all": "All"
-    },
-    "project_detail": {
-        "download": "Download project",
-        "gif_placeholder": "GIF coming soon"
-    },
-    "footer": "Hand-built site, no template — just me, Vue and curiosity."
+    {
+      "v": 12,
+      "s": "",
+      "l": "customer-intelligence blocks",
+      "b": "Toyama · Market Analysis (Power BI)"
+    }
+  ],
+  "about": {
+    "label": "About",
+    "title": "From operational routine to data as a decision tool",
+    "method_title": "How I work",
+    "method": [
+      {
+        "t": "Collect",
+        "d": "Raw sources: internal systems, APIs, spreadsheets."
+      },
+      {
+        "t": "Model",
+        "d": "Layers, relationships and the right granularity."
+      },
+      {
+        "t": "Analyze",
+        "d": "Cross variables until you find the why, not just the what."
+      },
+      {
+        "t": "Visualize",
+        "d": "Dashboards that answer business questions."
+      },
+      {
+        "t": "Automate",
+        "d": "Take repetitive manual work out of the way."
+      }
+    ],
+    "education": "Education",
+    "outside": "Outside work",
+    "hobby_music": "Music",
+    "hobby_music_text": "Always a soundtrack running",
+    "hobby_games": "Games",
+    "hobby_games_text": "Playing to unwind",
+    "hobby_cooking": "Cooking",
+    "hobby_cooking_text": "Cooking in spare time",
+    "hobby_photo": "By my side",
+    "hobby_photo_text": "Ana and Athena"
+  },
+  "experience": {
+    "label": "Experience",
+    "title": "Cases: problem, solution, result",
+    "intro": "Pick a company and a case. Hover a tool to see where else it shows up.",
+    "problem": "Problem",
+    "solution": "Solution",
+    "result": "Result",
+    "open": "open",
+    "close": "close"
+  },
+  "projects": {
+    "label": "Projects",
+    "title": "Case studies",
+    "intro": "Business problems I solved (or simulated) with Power BI, n8n and other tools. Filter like a slicer.",
+    "all": "All",
+    "context": "Context",
+    "discovery": "Discovery",
+    "solution": "Solution",
+    "result": "Result",
+    "count": "{n} of {total}",
+    "open": "Open",
+    "close": "Close"
+  },
+  "certificates": {
+    "label": "Certificates",
+    "title": "Education and certifications",
+    "done": "Completed",
+    "progress": "In progress",
+    "view": "View certificate",
+    "verify": "Verify"
+  },
+  "stack": {
+    "label": "Stack",
+    "title": "Everyday tools",
+    "intro": "Hover a tool: it shows where I used it, and related cases light up.",
+    "groups": {
+      "bi": "BI",
+      "data": "Data and automation",
+      "build": "Building",
+      "learning": "Learning"
+    }
+  },
+  "languages": {
+    "label": "Languages",
+    "title": "Languages",
+    "items": [
+      {
+        "flag": "br",
+        "n": "Portuguese",
+        "l": "Native",
+        "v": 100
+      },
+      {
+        "flag": "us",
+        "n": "English",
+        "l": "Fluent",
+        "v": 85
+      },
+      {
+        "flag": "jp",
+        "n": "Japanese",
+        "l": "Basic",
+        "v": 30
+      },
+      {
+        "flag": "it",
+        "n": "Italian",
+        "l": "Basic",
+        "v": 30
+      }
+    ]
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Let's talk?",
+    "text": "Open to talk about data, BI and automation. Pick a channel in the table.",
+    "run": "Run",
+    "hint": "click a row to open",
+    "copy": "Copy",
+    "copied": "Copied",
+    "channel": "Channel",
+    "value": "Contact"
+  },
+  "footer": "Handmade site, no template: just me, Vue and curiosity."
 }

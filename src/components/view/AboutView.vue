@@ -1,7 +1,6 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
-import { certificationPaths, standaloneCertificates } from '../../assets/data/certificates.js'
-import CertificationPathCard from '../ui/CertificationPathCard.vue'
+import { standaloneCertificates } from '../../assets/data/certificates.js'
 import CertificateCard from '../ui/CertificateCard.vue'
 import { aboutContent } from '../../assets/data/about.js'
 import AboutVisual from '../sections/AboutVisual.vue'
@@ -70,7 +69,6 @@ const courses = ['AWS', 'Snowflake', 'Databricks', 'Tableau', 'Looker']
         <div>
           <h3 class="subhead" v-reveal>{{ t('about.certifications_title') }}</h3>
           <div class="cert-list" v-reveal>
-            <CertificationPathCard v-for="p in certificationPaths" :key="p.id" :path="p" />
             <CertificateCard v-for="c in standaloneCertificates" :key="c.title" :cert="c" />
           </div>
         </div>
