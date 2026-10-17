@@ -118,7 +118,11 @@
     "done": "Concluído",
     "progress": "Em andamento",
     "view": "Ver certificado",
-    "verify": "Verificar"
+    "verify": "Verificar certificado",
+    "loading": "Carregando certificado…",
+    "error": "Não foi possível carregar a prévia. Use os botões abaixo.",
+    "nopdf": "Prévia indisponível. Use o botão abaixo para verificar o certificado online.",
+    "openpdf": "Abrir PDF"
   },
   "stack": {
     "label": "Stack",

@@ -118,7 +118,11 @@
     "done": "Completed",
     "progress": "In progress",
     "view": "View certificate",
-    "verify": "Verify"
+    "verify": "Verify certificate",
+    "loading": "Loading certificate…",
+    "error": "Could not load the preview. Use the buttons below.",
+    "nopdf": "Preview unavailable. Use the button below to verify the certificate online.",
+    "openpdf": "Open PDF"
   },
   "stack": {
     "label": "Stack",

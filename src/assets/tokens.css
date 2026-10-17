@@ -57,4 +57,5 @@
     --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
     --nav-h: 64px;
     --tabs-h: 46px;
+    --top-h: calc(var(--nav-h) + var(--tabs-h));
 }
